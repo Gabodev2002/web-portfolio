@@ -11,13 +11,34 @@
     position: relative;
     overflow: hidden;
 }
+.mainContainer > h1 {
+    animation: slideIn 1.5s forwards;
+}
 .sectionContainer {
     width: 100vw;
     height: auto;
     position: relative;
     overflow: hidden;
+    animation: sectionAnimation .5s ease-in forwards; 
 }
 
-@media screen and (max-width: 768px) {
-    
+
+@keyframes slideIn  {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes sectionAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-2px);
+    }
 }
