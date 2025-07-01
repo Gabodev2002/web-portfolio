@@ -13,12 +13,11 @@
 }
 .sectionContainer {
     width: 100vw;
-    height: 80vh;
-    margin: 1rem auto;
+    height: auto;
     position: relative;
     overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
-   
+    
 }
