@@ -40,7 +40,7 @@ export const ProjectSection = ({ project, index }: { project: DataProjects, inde
 
     return(
 
-    <section ref={sectionRef} className={`${isVisible ? `${styles.sectionContainer}` : 'opacity-0'} grid grid-cols-1 px-8 py-28 lg:mt-8 lg:grid-cols-2 lg:px-12 lg:gap-12 items-center justify-center max-w-7xl m-auto`}>
+    <section ref={sectionRef} className={`${isVisible ? `${styles.sectionContainer}` : 'opacity-0'} grid grid-cols-1 px-8 py-20 md:py-28 lg:mt-8 lg:grid-cols-2 lg:px-12 lg:gap-12 items-center justify-center max-w-7xl m-auto`}>
 
         <div className={`${textOrderClass}`}>
 
@@ -52,10 +52,11 @@ export const ProjectSection = ({ project, index }: { project: DataProjects, inde
 
         <div className={`flex justify-center relative ${imageOrderClass}`}>
             <Image
-                className={`w-full h-auto max-h-[${project.imageSizes?.maxHeight}] max-w-[${project.imageSizes?.maxWidth}] bg-contain mt-16 hover:scale-105 transition-transform duration-500`} 
+            style={{ maxWidth: project.imageSizes?.maxWidth || 'none', maxHeight: project.imageSizes?.maxHeight || 'none' }}
+                className={`w-full h-auto bg-contain mt-16 hover:scale-105 transition-transform duration-500`} 
                 src={project.imageUrl || ''}
-                width={project.imageSizes?.width}
-                height={project.imageSizes?.height}
+                width={project.imageSizes?.width || 0}
+                height={project.imageSizes?.height || 0}
                 alt="Description"
                 priority
             />

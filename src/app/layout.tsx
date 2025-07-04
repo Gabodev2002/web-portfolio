@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${pathway_extreme.className} antialiased overflow-x-hidden`}
+        className={`${pathway_extreme.className} antialiased overflow-x-hidden relative`}
       >
         <Header />
         {children}
