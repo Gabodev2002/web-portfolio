@@ -3,8 +3,9 @@ import Image from 'next/image'
 import { FaReact, FaCss3, FaJsSquare, FaHtml5, FaGithub } from "react-icons/fa";
 import { maskImage } from '@/utils/imageStyle';
 import { IoLogoVercel } from "react-icons/io5";
-import { SiNextdotjs, SiTypescript } from "react-icons/si";
+import { SiNextdotjs, SiTypescript, SiVite } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 export default function AboutPage () {
     return (
@@ -18,6 +19,7 @@ export default function AboutPage () {
                 <p>Im front end developer from Venezuela</p>
                 <p>Im a passionate developer with a love for creating dynamic and responsive web applications.</p> 
                 <p>I have been creating web applications since 1 year ago with react js, typeScript, vite, next js, tailwind</p>
+                <p>Front-End Developer with 1 year of hands-on experience crafting modern and responsive user interfaces. My self-taught background, solidified through Platzi, has equipped me with strong problem-solving skills and a rapid learning ability. I am proficient in technologies such as HTML, CSS, JavaScript, and React. I am actively seeking my first professional opportunity to contribute my skills, collaborate within a team, and continue growing in the world of web development.</p>
             </div>
             <div className='w-full flex justify-center lg:justify-end'>
                 <Image className='bg-cover rounded-2xl w-auto h-auto' style={maskImage} width='600' height='500' src="/fotocv.webp" alt="foto-cv" priority/>
@@ -37,6 +39,8 @@ export default function AboutPage () {
                 <SiNextdotjs size={70} className='icon-base next-icon animate-pulse'/>
                 <FaGitAlt size={70} className='icon-base git-icon animate-pulse'/>
                 <FaGithub size={70} className='icon-base github-icon animate-pulse'/>
+                <RiTailwindCssFill size={70} className='icon-base tw-icon'/>
+                <SiVite size={70} className='icon-base vite-icon'/>
             </div>
         </div>
 

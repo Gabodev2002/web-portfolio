@@ -48,4 +48,10 @@ body {
 .github-icon:hover {
   color: #080808 !important;
 }
+.tw-icon:hover {
+  color: #1dc0cd !important;
+}
+.vite-icon:hover {
+  color: #8484fe !important;
+}
 
