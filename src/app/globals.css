@@ -16,3 +16,36 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+.icon-base {
+  color: #888888;
+  transition: color 0.3s ease-in-out;
+}
+.css-icon:hover {
+  color: #297bff !important; 
+}
+.react-icon:hover {
+  color: #81e0ff !important;
+}
+.ts-icon:hover {
+  color: #097ece !important;
+}
+.js-icon:hover {
+  color: #f7e025 !important;
+}
+.next-icon:hover {
+  color: #080808 !important;
+}
+.vercel-icon:hover {
+  color: white !important;
+}
+.html-icon:hover {
+  color: #f0672b !important;
+}
+.git-icon:hover {
+  color: #f1553a !important;
+}
+.github-icon:hover {
+  color: #080808 !important;
+}
+

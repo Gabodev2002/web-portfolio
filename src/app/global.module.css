@@ -38,6 +38,12 @@
 .out-animation {
     animation: slideOff 1s ease-out ;
 }
+.ccIcon {
+    color: white;
+}
+.ccIcon:hover {
+  color: blue;
+}
 
 
 @keyframes slideIn  {
