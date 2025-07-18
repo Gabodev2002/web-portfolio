@@ -5,9 +5,32 @@
   --foreground: #000000;
 }
 
+
+.darkest-static-gradient {
+  /* Un gradiente lineal para una transición sutil de esquina a esquina */
+  background: linear-gradient(
+    to bottom right,
+    #000000, /* Negro puro */
+    #050505, /* Un negro ligeramente menos intenso */
+    #101010  /* Un gris muy oscuro, casi imperceptible */
+  );
+  /* O si prefieres un punto focal de oscuridad en el centro */
+  /* background: radial-gradient(circle at center, #000000, #050505, #101010); */
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
+    --background: linear-gradient(
+    to bottom right,
+    #000000, /* Negro puro */
+    #050505, /* Un negro ligeramente menos intenso */
+    #101010  /* Un gris muy oscuro, casi imperceptible */
+  );;
     --foreground: #ffffff;
   }
 }
