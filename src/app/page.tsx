@@ -13,44 +13,11 @@ export default function Home() {
     const containerRef = useRef<HTMLDivElement>(null)
     const headerTextRef = useRef<HTMLHeadingElement>(null)
     const [ isActive, setIsActive ] = useState(false)
-    // const [ isStart, setIsStart ] = useState(false)
     const [ isAnimationSlideIn ] = useState(true)
     const videoContainerRef = useRef<HTMLDivElement>(null)
 
-
-
-    // useEffect(() => {
-    //   const body = document.body
-      
-    //   if(isStart) {
-    //     body.style.overflowY = 'scroll'
-
-    //   } else {
-    //     body.style.overflowY = 'hidden'
-    //   }
-        
-      
-      
-    //   window.addEventListener('scrollend', () => {
-    //     const scrollY = window.scrollY
-    //     if(scrollY <= 0) {
-    //       console.log('es menor a 0')
-    //     }
-    //   } )
-      
-    //   window.addEventListener('scroll', () => {
-    //     const scrollY = window.scrollY
-    //       if(scrollY > 0) {
-    //         console.log(scrollY)
-    //     } 
-    //     })
-
-
-    // }, [isStart])
-
     
     const handleStart = () => {
-      // setIsStart(true)
       setIsActive(true)
          if(mainRef.current && headerTextRef.current) {
            setTimeout(() => {
@@ -77,6 +44,8 @@ export default function Home() {
         <ProjectSection project={dataProjects[0]} index={1}/>
 
         <ProjectSection project={dataProjects[1]} index={2}/> 
+
+        <ProjectSection project={dataProjects[2]} index={1}/> 
       </main>
     
 
