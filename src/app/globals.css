@@ -7,16 +7,14 @@
 
 
 .darkest-static-gradient {
-  /* Un gradiente lineal para una transición sutil de esquina a esquina */
+  
   background: linear-gradient(
     to bottom right,
-    #000000, /* Negro puro */
-    #050505, /* Un negro ligeramente menos intenso */
-    #101010  /* Un gris muy oscuro, casi imperceptible */
+    #000000,
+    #050505, 
+    #101010 
   );
-  /* O si prefieres un punto focal de oscuridad en el centro */
-  /* background: radial-gradient(circle at center, #000000, #050505, #101010); */
-
+  
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -27,9 +25,9 @@
   :root {
     --background: linear-gradient(
     to bottom right,
-    #000000, /* Negro puro */
-    #050505, /* Un negro ligeramente menos intenso */
-    #101010  /* Un gris muy oscuro, casi imperceptible */
+    #000000, 
+    #050505, 
+    #101010  
   );;
     --foreground: #ffffff;
   }
@@ -57,7 +55,7 @@ body {
   color: #f7e025 !important;
 }
 .next-icon:hover {
-  color: #080808 !important;
+  color: #ffffff !important;
 }
 .vercel-icon:hover {
   color: white !important;
@@ -69,7 +67,7 @@ body {
   color: #f1553a !important;
 }
 .github-icon:hover {
-  color: #080808 !important;
+  color: #ffffff !important;
 }
 .tw-icon:hover {
   color: #1dc0cd !important;

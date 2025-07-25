@@ -16,14 +16,14 @@ export default function AboutPage () {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 h-auto w-full max-w-7xl m-auto mt-10 md:mt-20'>
             
             <div className='flex flex-col gap-5  pt-5 '>
-                {/* <p>Im front end developer from Venezuela</p>
-                <p>Im a passionate developer with a love for creating dynamic and responsive web applications.</p> 
-                <p>I have been creating web applications since 1 year ago with react js, typeScript, vite, next js, tailwind</p>
-                <p>Front-End Developer with 1 year of hands-on experience crafting modern and responsive user interfaces. My self-taught background, solidified through Platzi, has equipped me with strong problem-solving skills and a rapid learning ability. I am proficient in technologies such as HTML, CSS, JavaScript, and React. I am actively seeking my first professional opportunity to contribute my skills, collaborate within a team, and continue growing in the world of web development.</p> */}
-                <p className='leading-7 lg:text-lg'>Im a passionate Front-End Developer from Venezuela, with one and a half years of experience crafting dynamic and responsive web applications. My self-taught background and Platzi training have equipped me with strong problem-solving skills and a rapid learning ability. Im proficient in HTML, CSS, JavaScript, and TypeScript, and have hands-on experience with React.js, Next.js, Vite, and Tailwind CSS. Im actively seeking my first professional opportunity to apply my skills and continue growing in the world of web development.</p>
+                <p className='leading-7 lg:'>I&apos;m a Front-End Developer with a passion for bringing designs to life. Give me a vision, and I&apos;ll transform it into a responsive, pixel-perfect reality. I&apos;m a quick learner and I love diving into new challenges to expand my skillset. I thrive in collaborative environments and enjoy working as part of a team. I&apos;m ready to put my knowledge into production and contribute to impactful projects.
+                </p>
+                <p>
+                    I&apos;m a self-taught developer, building my skills through platforms like Platzi and other online resources. Over the past year, I&apos;ve actively developed a range of personal projects, gaining practical experience and a strong foundation. I&apos;m ready to put my knowledge into production and contribute to impactful projects.
+                </p>
             </div>
-            <div className='w-full flex justify-center lg:justify-end'>
-                <Image className='bg-cover rounded-2xl w-auto h-auto' style={maskImage} width='600' height='500' src="/fotocv.webp" alt="foto-cv" priority/>
+            <div className='w-full h-[400px] flex justify-center lg:justify-end'>
+                <Image className='bg-cover rounded-2xl' style={maskImage} width={400} height={400} src="/fotocv.webp" alt="foto-cv" priority />
             </div>
 
         </div>
@@ -43,6 +43,10 @@ export default function AboutPage () {
                 <RiTailwindCssFill size={70} className='icon-base tw-icon'/>
                 <SiVite size={70} className='icon-base vite-icon'/>
             </div>
+        </div>
+
+        <div className='mt-10 md:mt-20' id='contact'>
+            <h1 className='text-4xl md:text-6xl z-10'>Contact</h1>
         </div>
 
        </section>
