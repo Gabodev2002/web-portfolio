@@ -16,8 +16,9 @@ export default function AboutPage () {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 h-auto w-full max-w-7xl m-auto mt-10 md:mt-20'>
             
             <div className='flex flex-col gap-5  pt-5 '>
-                <p className='leading-7 lg:'>I&apos;m a Front-End Developer with a passion for bringing designs to life. Give me a vision, and I&apos;ll transform it into a responsive, pixel-perfect reality. I&apos;m a quick learner and I love diving into new challenges to expand my skillset. I thrive in collaborative environments and enjoy working as part of a team. I&apos;m ready to put my knowledge into production and contribute to impactful projects.
+                <p className='leading-7 lg:'>I&apos;m a Front-End Developer with a passion for bringing designs to life. Give me a vision, and I&apos;ll transform it into a responsive, pixel-perfect reality. I&apos;m a quick learner and I love diving into new challenges to expand my skillset. I thrive in collaborative environments and enjoy working as part of a team.
                 </p>
+                
                 <p>
                     I&apos;m a self-taught developer, building my skills through platforms like Platzi and other online resources. Over the past year, I&apos;ve actively developed a range of personal projects, gaining practical experience and a strong foundation. I&apos;m ready to put my knowledge into production and contribute to impactful projects.
                 </p>
