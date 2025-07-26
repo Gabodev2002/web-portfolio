@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { IoDownloadOutline } from "react-icons/io5";
 
 export const Header = () => {
 
@@ -17,8 +18,9 @@ export const Header = () => {
                 <span>GaboDev.</span>
                 <ul className="flex gap-8 items-center"> 
                     <Link href={'/'} className={`${pathname === '/' && isActive}`}>Work</Link> 
-                    <Link href={'/about'} className={`${pathname === '/about' && isActive}`}>About</Link>
-                    <Link download={'curriculumv.pdf'} href='/curriculumv.pdf' className='py-2 px-5 text-sm bg-[#00FFFF] hover:bg-[#10FFFF] cursor-pointer rounded-sm text-black font-bold hover:text-white'>Download cv</Link>
+                    <Link href={'/about'} className={`${pathname === '/about' && isActive} hover:text-[#00FFFF]`}>About</Link>
+                    <Link download={'curriculumv.pdf'} href='/curriculumv.pdf' className='text-sm cursor-pointer rounded-sm font-bold text-white hover:text-[#00FFFF] flex items-center gap-1'>Download cv <IoDownloadOutline className='' />
+                    </Link>
                 </ul>
             </nav>
             </div>

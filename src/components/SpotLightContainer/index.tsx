@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react"
 
 export const SpotLightContainer = ({ children }: { children: React.ReactNode }) => {
@@ -18,8 +20,6 @@ export const SpotLightContainer = ({ children }: { children: React.ReactNode }) 
         const clientX = e.clientX - rect.left
         const clientY = e.clientY - rect.top
         setSpotLight({ x: `${clientX}px`, y: `${clientY}px` })
-        
-        console.log(rect, clientX, clientY)
     }
 
     return(

@@ -41,9 +41,9 @@ export const ProjectSection = ({ project, index }: { project: DataProjects, inde
 
     return(
 
-    <section ref={sectionRef} className={`${isVisible ? `${styles.sectionContainer}` : 'opacity-0'} grid grid-cols-1 px-8 py-20 md:py-10 lg:mt-8 lg:grid-cols-2 lg:px-12 items-center justify-center max-w-6xl m-auto`}>
+    <section ref={sectionRef} className={`${isVisible ? `${styles.sectionContainer}` : 'opacity-0'} grid grid-cols-1 px-8 py-20 md:py-10 lg:mt-25 lg:grid-cols-2 lg:px-12 items-center justify-center max-w-6xl m-auto `}>
 
-        <div className={`${textOrderClass}`}>
+        <div className={`${textOrderClass} flex justify-center`}>
             <SpotLightContainer>
                 <h2 className='text-2xl md:text-3xl pb-4 relative z-10'>{project.name} </h2>
                 <p className='text-[#888888] font-light leading-7 text-justify max-w-[90%] z-10'>{project.description}</p>
@@ -56,7 +56,7 @@ export const ProjectSection = ({ project, index }: { project: DataProjects, inde
         <div className={`flex justify-center relative ${imageOrderClass}`}>
             <Image
             style={{ maxWidth: project.imageSizes?.maxWidth || 'none', maxHeight: project.imageSizes?.maxHeight || 'none' }}
-                className={`w-full h-auto bg-cover mt-16 hover:scale-105 transition-transform duration-500`} 
+                className={`w-full h-auto bg-cover mt-16 lg:mt-0 hover:scale-105 transition-transform duration-500`} 
                 src={project.imageUrl || ''}
                 width={project.imageSizes?.width || 0}
                 height={project.imageSizes?.height || 0}

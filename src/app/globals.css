@@ -8,19 +8,7 @@
 
 .darkest-static-gradient {
   
-  /* background: linear-gradient(
-    to bottom right,
-    #000000,
-    #050505, 
-    #101010 
-  ); */
-
-  /* background: linear-gradient(to right, #111111, #555555); option 2 */
-
-   background: radial-gradient(circle, #111111, #000000); /* option 1 */
-
-  /* background-color: #111111; */
-  
+  background: radial-gradient(circle, #111111, #000000);
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -29,18 +17,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: linear-gradient(
-    to bottom right,
-    #000000, 
-    #050505, 
-    #101010  
-  );;
+    --background: radial-gradient(circle, #111111, #000000);;
     --foreground: #ffffff;
   }
 }
 
 body {
-  background: var(--background);
+  background: radial-gradient(circle, #111111, #000000); 
   color: var(--foreground);
 }
 
@@ -86,7 +69,8 @@ body {
 
 .my-container {
   position: relative; 
-  width: auto;
+  width: 100%;
+  max-width: 464px;
   min-height: auto; 
   background-color: #222;
   color: #ccc;
@@ -100,6 +84,8 @@ body {
   text-align: center;
   padding: 2rem;
   transition: all 0.3s ease;
+  cursor: grab;
+
 }
 
 
@@ -112,8 +98,6 @@ body {
   height: 100%;
   pointer-events: none; 
   transition: opacity 0.3s ease-in-out;
-
-  cursor: none;
 
   background: radial-gradient(
     circle at var(--mouse-x) var(--mouse-y),
