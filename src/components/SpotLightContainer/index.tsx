@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-export const SpotLightContainer = ({ children }: { children: React.ReactNode }) => {
+export const SpotLightContainer = ({ children, width, height, cursor }: { children: React.ReactNode, width?: string, height?: string, cursor?: string }) => {
 
     const [ isSpotLightActive, setIsSpotLightActive ] = useState(false)
     const [ spotLight, setSpotLight ] = useState({ x: '50%', y: '50%' })
@@ -23,7 +23,7 @@ export const SpotLightContainer = ({ children }: { children: React.ReactNode }) 
     }
 
     return(
-        <div className="my-container"  
+        <div className={`my-container w-${width || 'full'} h-${height || 'auto'} cursor-${cursor || 'default'}`}  
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             onMouseMove={handleMouseMove}
