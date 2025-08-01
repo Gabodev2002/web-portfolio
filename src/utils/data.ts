@@ -12,6 +12,8 @@ export const dataProjects: DataProjects[] = [
 
     {name: 'Tera Web', description: `I'm designed and built a modern streaming application from the ground up, deployed live on Vercel. This project showcases my expertise in crafting intuitive, high-performance user interfaces using React and TypeScript..`, imageUrl: '/teraWebMobile-portrait.webp', websiteUrl: 'https://www.teraelectricalstaffing.com/', imageSizes: { width: 320, height: 450, maxWidth: 290, maxHeight: 450}}, 
 
-    {name: 'Todo App', description: `I'm designed and built a modern Todo App from the ground up, deployed live on Vercel. This project showcases my expertise in crafting intuitive, high-performance user interfaces using React and TypeScript..`, imageUrl: '/todoapp-portrait.webp', websiteUrl: 'https://todo-app-hazel-one.vercel.app/', imageSizes: { width: 320, height: 450, maxWidth: 290, maxHeight: 450}},  
+    {name: 'Todo App', description: `I'm designed and built a modern Todo App from the ground up, deployed live on Vercel. This project showcases my expertise in crafting intuitive, high-performance user interfaces using React and TypeScript..`, imageUrl: '/todoapp-portrait.webp', websiteUrl: 'https://todo-app-hazel-one.vercel.app/', imageSizes: { width: 320, height: 450, maxWidth: 290, maxHeight: 450}},
+
+    {name: 'Collection App', description: `I'm designed and built a modern Todo App from the ground up, deployed live on Vercel. This project showcases my expertise in crafting intuitive, high-performance user interfaces using React and TypeScript..`, imageUrl: '/collections-front.webp', websiteUrl: 'https://collection-app-r6qt.vercel.app/', imageSizes: { width: 470, height: 470, maxWidth: 470, maxHeight: 470}},  
 
 ]

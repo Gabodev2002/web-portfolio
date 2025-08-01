@@ -14,14 +14,14 @@ export default function AboutPage () {
 
         <h1 className='text-3xl md:text-3xl z-10'>About <span className='text-[#00ffff]'> me</span></h1>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 h-auto w-full max-w-7xl m-auto mt-5 md:mt-5'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 h-auto w-full max-w-7xl m-auto mt-5 md:mt-5'> 
             
 
-                <div className='flex flex-col items-center justify-center h-auto w-full'>
+                <div className='flex flex-col items-center justify-center h-auto w-full'> 
                     <SpotLightContainer>
-                        <div className='flex flex-col items-center gap-5  pt-5 '>
-                            <p className='leading-7 lg:'>I&apos;m a Front-End Developer with a passion for bringing designs to life. Give me a vision, and I&apos;ll transform it into a responsive, pixel-perfect reality. I&apos;m a quick learner and I love diving into new challenges to expand my skillset. I thrive in collaborative environments and enjoy working as part of a team.
-                            </p>
+                        <div className='flex flex-col items-center gap-5  pt-5 '> 
+                            <p className='leading-7 lg:'>I&apos;m a Front-End Developer with a passion for bringing designs to life. Give me a vision, and I&apos;ll transform it into a responsive, pixel-perfect reality. I&apos;m a quick learner and I love diving into new challenges to expand my skillset. I thrive in collaborative environments and enjoy working as part of a team. 
+                            </p> 
                             
                             {/* <p>
                                 I&apos;m a self-taught developer, building my skills through platforms like Platzi and other online resources. Over the past year, I&apos;ve actively developed a range of personal projects, gaining practical experience and a strong foundation. I&apos;m ready to put my knowledge into production and contribute to impactful projects.
@@ -37,13 +37,13 @@ export default function AboutPage () {
 
         </div>
 
-        <div className='flex gap-4'>
+        <div className='flex flex-col md:flex-row  gap-4 '>
 
             <div className='mt-10 md:mt-20 w-full'>
 
-                <h1 className='text-2xl md:text-3xl z-10 text-center'>Skills</h1>
+                <h1 className='text-2xl z-10 text-center'>Skills</h1>
                 
-                <div className='flex flex-wrap items-center gap-8 py-20 m-auto'>
+                <div className='flex flex-wrap items-center gap-8 py-10 lg:py-20 m-auto'>
                     <FaReact size={40} className='icon-base react-icon animate-pulse'/>
                     <FaHtml5 size={40} className='icon-base html-icon animate-pulse'/>
                     <FaCss3 size={40} className='icon-base css-icon animate-pulse' />
@@ -65,9 +65,8 @@ export default function AboutPage () {
             <div className='flex justify-center items-center gap-4 w-full '>
 
                     <div className='z-10'>
-                        {/* <h2 className='pb-6'>If you would like to get in touch, feel free to reach out!</h2> */}
-
-                        <div className='flex flex-col items-center gap-5 flex flex-wrap justify-center pt-20'>
+                
+                        <div className='flex flex-col items-center gap-5 flex flex-wrap justify-center py-10 lg:pt-20'>
 
                         
                                 <p>Email: gabo.mgb6@gmail.com</p>
