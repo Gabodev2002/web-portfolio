@@ -37,7 +37,7 @@ export default function Home() {
             <h1 ref={headerTextRef} className={`${isActive ? styles['out-animation'] : ''} ${isAnimationSlideIn ? styles['in-animation'] : ''} text-2xl lg:text-4xl z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}>
             I&apos;m <span className={`${styles.secondColor}`}>Gabo</span> - and I&apos;m passionate about bringing <span className={`${styles.secondColor}`}>web pages</span> to life.
             </h1>
-            <button onClick={() => handleStart()} className="absolute bottom-6 left-1/2 -translate-x-1/2 w-auto h-auto animate-bounce"><IoMdArrowDropdown color='#00FFFF' size={70}/></button>
+            <button onClick={() => handleStart()} className="absolute bottom-6 left-1/2 -translate-x-1/2 w-auto h-auto animate-bounce cursor-pointer"><IoMdArrowDropdown color='#00FFFF' size={70}/></button>
       </section>
 
       <main ref={mainRef} className='darkest-static-gradient'>

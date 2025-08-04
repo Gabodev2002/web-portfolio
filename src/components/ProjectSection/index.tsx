@@ -54,15 +54,17 @@ export const ProjectSection = ({ project, index }: { project: DataProjects, inde
         </div>
 
         <div className={`flex justify-center relative ${imageOrderClass}`}>
-            <Image
-            style={{ maxWidth: project.imageSizes?.maxWidth || 'none', maxHeight: project.imageSizes?.maxHeight || 'none' }}
-                className={`w-full h-auto bg-cover mt-16 lg:mt-0 hover:scale-105 transition-transform duration-500`} 
-                src={project.imageUrl || ''}
-                width={project.imageSizes?.width || 0}
-                height={project.imageSizes?.height || 0}
-                alt="Description"
-                priority
-            />
+            <a href={project.websiteUrl} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center w-full h-full max-w-[465px]">
+                <Image
+                    style={{ maxWidth: project.imageSizes?.maxWidth || 'none', maxHeight: project.imageSizes?.maxHeight || 'none' }}
+                    className={`w-full h-auto bg-cover mt-16 lg:mt-0 hover:scale-105 transition-transform duration-500`} 
+                    src={project.imageUrl || ''}
+                    width={project.imageSizes?.width || 0}
+                    height={project.imageSizes?.height || 0}
+                    alt="Description"
+                    priority
+                />
+            </a>
         </div>
 
     </section>
