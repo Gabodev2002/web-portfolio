@@ -30,7 +30,7 @@ export const SpotLightContainer = ({ children, width, height, cursor }: SpotLigh
     }
 
     return(
-        <div className={`my-container w-${width || 'full'} h-${height || 'auto'} cursor-${cursor || 'default'}`}  
+        <div className={`my-container w-${width || 'full'} h-${height || 'auto'} cursor-${cursor || 'default'} max-w-[465px]`}  
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             onMouseMove={handleMouseMove}

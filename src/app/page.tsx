@@ -41,13 +41,19 @@ export default function Home() {
       </section>
 
       <main ref={mainRef} className='darkest-static-gradient'>
-        <ProjectSection project={dataProjects[0]} index={1}/>
 
-        <ProjectSection project={dataProjects[1]} index={2}/> 
+        <div className='flex flex-col md:gap-8 lg:gap-0'>
 
-        <ProjectSection project={dataProjects[2]} index={1}/> 
+          <ProjectSection project={dataProjects[0]} index={1}/>
 
-        <ProjectSection project={dataProjects[3]} index={2}/> 
+          <ProjectSection project={dataProjects[1]} index={2}/> 
+
+          <ProjectSection project={dataProjects[2]} index={1}/> 
+
+          <ProjectSection project={dataProjects[3]} index={2}/>
+
+        </div> 
+
       </main>
     
 
