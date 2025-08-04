@@ -2,7 +2,14 @@
 
 import { useState } from "react"
 
-export const SpotLightContainer = ({ children, width, height, cursor }: { children: React.ReactNode, width?: string, height?: string, cursor?: string }) => {
+interface SpotLightContainerProps {
+    children: React.ReactNode;
+    width?: string;
+    height?: string;
+    cursor?: string;
+}
+
+export const SpotLightContainer = ({ children, width, height, cursor }: SpotLightContainerProps) => {
 
     const [ isSpotLightActive, setIsSpotLightActive ] = useState(false)
     const [ spotLight, setSpotLight ] = useState({ x: '50%', y: '50%' })
