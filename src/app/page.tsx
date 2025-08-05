@@ -52,6 +52,8 @@ export default function Home() {
 
           <ProjectSection project={dataProjects[3]} index={2}/>
 
+          <ProjectSection project={dataProjects[4]} index={1}/>
+
         </div> 
 
       </main>
